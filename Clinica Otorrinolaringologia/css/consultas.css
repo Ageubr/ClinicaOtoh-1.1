@@ -1,0 +1,37 @@
+/* Estilos para o formulário de verificação de consulta */
+form {
+    border: 2px solid #0097a7;  /* Borda azul de 2px */
+    padding: 20px;            /* Espaçamento interno para separar o conteúdo da borda */
+    border-radius: 8px;       /* Cantos arredondados */
+    max-width: 600px;         /* Limita a largura do formulário */
+    margin: 0 auto;           /* Centraliza o formulário na página */
+    background-color: #f9f9f9; /* Cor de fundo clara */
+}
+
+/* Estilos para o container de resultados */
+#resultado {
+    margin-top: 20px;
+    border: 2px solid #007BFF;  /* Borda azul para o container de resultados */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Títulos dentro do formulário e dos resultados */
+h3 {
+    margin-top: 20px;
+}
+
+/* Melhorando a aparência do botão */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}

@@ -1,0 +1,108 @@
+/* Estilo geral para o site */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #e0f7fa; /* Azul claro */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #0097a7; /* Azul escuro */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #0097a7; /* Azul escuro */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+/*---------------------------------------- ESTILO DE BOTÕES ----------------------------------------*/
+button, .btn {
+    background-color: #0097a7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, .btn:hover {
+    background-color: #007bff;
+}
+
+/*---------------------------------------- PÁGINA INICIAL ----------------------------------------*/
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 200px; /* Ajuste o tamanho conforme necessário */
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*---------------------------------------- FORMULÁRIOS ----------------------------------------*/
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 20px auto;
+    gap: 15px;
+    text-align: left;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}

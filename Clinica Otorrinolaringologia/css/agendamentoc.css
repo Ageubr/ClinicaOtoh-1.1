@@ -1,0 +1,15 @@
+/* Estilos para o contêiner do formulário de agendamento */
+#consulta form {
+    border: 2px solid #0097a7;  /* Borda azul de 2px */
+    padding: 20px;            /* Espaçamento interno para separar o conteúdo da borda */
+    border-radius: 8px;       /* Cantos arredondados */
+    max-width: 800px;         /* Limita a largura do formulário */
+    margin: 0 auto;           /* Centraliza o formulário na página */
+    background-color: #f9f9f9; /* Cor de fundo clara */
+}
+
+/* Adiciona um espaçamento no título do formulário */
+#consulta h2 {
+    text-align: center;
+    font-size: 24px;
+}

@@ -1,0 +1,84 @@
+/* Estilos específicos para a página inicial */
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #0097a7;
+    margin-bottom: 20px;
+}
+
+section p {
+    color: #555;
+}
+
+.auth-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.auth-buttons .btn {
+    background-color: #fff;
+    color: #0097a7;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.auth-buttons .btn:hover {
+    background-color: #0097a7;
+    color: #fff;
+}
+
+/* Aplicando borda azul e efeito no hover para as divs de tratamentos */
+#treatments .treatment {
+    border: 2px solid #0097a7;  /* Borda azul */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#treatments .treatment:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Ajustando o tamanho do vídeo */
+#presentation-video video {
+    width: 80%;  /* Define a largura do vídeo para 80% da largura da tela */
+    max-width: 700px;  /* Define um limite de largura máxima para o vídeo */
+    height: auto;  /* Mantém a proporção do vídeo */
+    margin: 0 auto;  /* Centraliza o vídeo */
+    display: block;
+}
+.about-text {
+    border: 1px solid #0097a7;  /* Borda azul */
+    padding: 10px;  /* Espaçamento interno */
+    border-radius: 8px;  /* Bordas arredondadas */
+    margin-top: 10px;  /* Distância do topo */
+    margin-bottom: 10px;  /* Distância do fundo */
+}
+

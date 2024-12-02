@@ -1,0 +1,135 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais para a página */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+    padding-top: 80px; /* Espaço para o cabeçalho fixo */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-bottom: 50px; /* Adicionando espaço na parte inferior */
+    text-align: center; /* Centralizando todo o texto no corpo */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #0097a7;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    text-align: center; /* Centralizando o conteúdo do cabeçalho */
+}
+
+header .logo {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Estilo para o container */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Limita a largura máxima do container */
+    margin: 0 auto; /* Centraliza o container */
+    padding-top: 120px; /* Ajuste do padding para evitar que o conteúdo fique atrás do header */
+    padding: 20px;
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    text-align: center; /* Centralizando o texto no conteúdo principal */
+}
+
+/* Estilo dos resultados das consultas */
+div.consulta {
+    background-color: #fff;
+    border: 2px solid #0097a7;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centralizando o texto dentro da consulta */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+div.consulta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+div.consulta h2 {
+    font-size: 1.5rem;
+    color: #0097a7;
+    margin-bottom: 10px;
+}
+
+div.consulta p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+div.consulta form {
+    margin-top: 15px;
+}
+
+div.consulta button {
+    background-color: #0097a7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+div.consulta button:hover {
+    background-color: #007bff;
+}
+
+/* Estilos para a mensagem de nenhuma consulta encontrada */
+p.no-consulta {
+    font-size: 1.2rem;
+    color: #777;
+    text-align: center; /* Garantindo que o texto fique centralizado */
+    padding: 40px;
+    border: 2px dashed #0097a7;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-top: 20px;
+}

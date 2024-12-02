@@ -1,0 +1,77 @@
+/* Estilizando a grade de tratamentos */
+#treatments .treatment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas com tamanhos iguais */
+    gap: 20px; /* Espaçamento entre os itens */
+    margin: 0 auto;
+    max-width: 1200px; /* Largura máxima para a grade */
+    padding: 20px;
+}
+
+/* Estilizando os tratamentos */
+#treatments .treatment-grid .treatment {
+    border: 3px solid #0097a7; /* Borda azul ao redor de cada tratamento */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 15px;
+    background-color: #fff; /* Fundo branco para destaque */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+    text-align: center; /* Centralizando o conteúdo */
+}
+
+#treatments .treatment-grid .treatment:hover {
+    transform: translateY(-10px); /* Efeito de elevação */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+
+/* Estilo para as imagens dentro de cada tratamento */
+#treatments .treatment-grid .treatment img {
+    max-width: 100%; /* Ajusta o tamanho das imagens para não ultrapassarem os limites */
+    border-radius: 5px; /* Bordas arredondadas nas imagens */
+    margin-bottom: 10px;
+}
+
+/* Estilo para os títulos dos tratamentos */
+#treatments .treatment-grid .treatment .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Estilo para as descrições dos tratamentos */
+#treatments .treatment-grid .treatment .description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Botão dentro de cada tratamento */
+#treatments .treatment-grid .treatment .button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0097a7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+#treatments .treatment-grid .treatment .button:hover {
+    background-color: #0056b3; /* Cor mais escura no hover */
+}
+
+/* Adicionando responsividade */
+@media (max-width: 768px) {
+    #treatments .treatment-grid {
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    #treatments .treatment-grid {
+        grid-template-columns: 1fr; /* Uma coluna em telas muito pequenas */
+    }
+}
